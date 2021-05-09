@@ -24,9 +24,9 @@ error_reporting(E_NOTICE);
       
 $act = $_GET['act'];
 if($act == 'add'){
-include('admin_form_add.php');
+include('member_form_add.php');
 }elseif ($act == 'edit') {
-include('admin_form_edit.php');
+include('member_form_edit.php');
 }
 else {
 include('member.list.php');
