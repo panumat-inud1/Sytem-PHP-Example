@@ -17,19 +17,19 @@ error_reporting(E_NOTICE);
         <!-- Content Wrapper. Contains page content -->
       </div>
       <div class="col-md-8"> 
-      <a href="admin.php?act=add" class="btn-info btn-sm"> เพิ่ม </a>
+      <a href="type.php?act=add" class="btn-info btn-sm"> เพิ่ม </a>
       <p></p>
       
       <?php
       
 $act = $_GET['act'];
 if($act == 'add'){
-include('admin_form_add.php');
+include('type_form_add.php');
 }elseif ($act == 'edit') {
-include('admin_form_edit.php');
+include('type_form_edit.php');
 }
 else {
-include('admin_list.php');
+include('type_list.php');
 }
 ?>
 
